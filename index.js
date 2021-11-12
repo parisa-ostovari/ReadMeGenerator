@@ -28,21 +28,22 @@ const questions = [
         message: "How would someone use your project?",
     },
     {
-        type: "input",
+        type: "list",
         name: "license",
         message: "Choose a license for your project, from the following list:",
         choices: [
             "None",
             "MIT", 
-            "APACHE 2.0",  
+            "Apache 2.0",  
             "BSD 2-clause Simplified" ,
             "BSD 3-clause New/Revised",
-            "GNU GPL",],
+            "GNU GPL",
+        ]
     },
     {
         type: "input",
         name: "contributions",
-        message: "Did anyone help contribute to this project",
+        message: "Who were the contributors to this project",
     },
     {
         type: "input",
@@ -58,8 +59,7 @@ const questions = [
         type: "input",
         name: "email",
         message: "What is your email?",
-    },
-
+    }
 ];
 
 // TODO: Create a function to write README file
@@ -73,6 +73,7 @@ function init() {
         .then((answers) => {
             // console.log(answers.title)
             writeToFile('README.md', generateMarkdown({...answers}))
+            console.log ("Successfully created README.md file")
         })
 }
 

@@ -1,33 +1,20 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-
-
-
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+
+  ${renderLicenseBadge()}
 
   ## Description
   ${data.description}
 
   ## Table of Contents
 
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributions](#contributions)
-    * [Tests](#tests)
-    * [Questions](#questions)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributions](#contributions)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
   ## Installation 
   ${data.installation}
@@ -36,7 +23,9 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License
-  ${data.}
+    Copyright © ${data.license}. All rights reserved. 
+    Licensed under the ${data.license} license.
+
 
   ## Contributions
   ${data.contributions}
@@ -45,34 +34,19 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  ${data.questions}
 
+    If you have any questions please contact me at:
+      Email: ${data.email}
+      GitHub: https://github.com/${data.GitHub}
 `;
 }
 
+// TODO: Create a function that returns a license badge based on which license is passed in
+// If there is no license, return an empty string
+function renderLicenseBadge (license) {
+    if (license !== "None") {
+      return `![GitHub License](https://img.shields.io/badge/license-${license}-yellowgreen.svg)`
+  }
+}
+
 module.exports = generateMarkdown;
-
-
-const licenseArray = [
-  {
-    name: "MIT License",
-    link: "https://opensource.org/licenses/MIT",
-  },
-  {
-    name: "Apache License 2.0",
-    link: "https://www.apache.org/licenses/LICENSE-2.0.txt",
-  },
-  {
-    name: "BSD 2-Clause 'Simplified' License",
-    link: "https://opensource.org/licenses/BSD-2-Clause",
-  },
-  {
-    name: "BSD 3-Clause 'New' or 'Revised' License",
-    link: "https://spdx.org/licenses/BSD-3-Clause.html",
-  },
-  {
-    name: "GNU General Public License v2.0",
-    link: "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html",
-  },
-];
-

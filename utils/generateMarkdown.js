@@ -57,7 +57,7 @@ function generateMarkdown(data) {
   Read more about it at ${licenseLink}.
 
   ## Contributions
-  ${data.contributions}n
+  ${data.contributions}
 
   ## Tests
   ${data.tests}

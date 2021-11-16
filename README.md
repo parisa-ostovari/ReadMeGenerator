@@ -1,5 +1,8 @@
 # README Generator ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
+  ## Demonstration
+  https://watch.screencastify.com/v/zfI0sxQprZYJNsY9uDjz
+
   ## Description
   This application was created to function as a README generator for any given repository, through the use of node.js and npm packages. 
 

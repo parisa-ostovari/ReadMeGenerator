@@ -1,12 +1,9 @@
-# 
-
-  ![GitHub License](https://img.shields.io/badge/license-undefined-yellowgreen.svg)
+#  ![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
 
   ## Description
   
 
   ## Table of Contents
-
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
@@ -21,9 +18,9 @@
   
 
   ## License
-    Copyright © None. All rights reserved. 
-    Licensed under the None license.
-
+  Copyright © Apache 2.0. All rights reserved. 
+  Licensed under the Apache 2.0 license.
+  Read more about it at https://www.apache.org/licenses/LICENSE-2.0.
 
   ## Contributions
   

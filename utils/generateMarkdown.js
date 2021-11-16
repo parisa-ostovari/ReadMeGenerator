@@ -52,12 +52,12 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License
-  Copyright © ${data.license}. All rights reserved. 
-  Licensed under the ${data.license} license.
+  Copyright © ${data.license} 2021. All rights reserved.\n
+  Licensed under the ${data.license} license.\n
   Read more about it at ${licenseLink}.
 
   ## Contributions
-  ${data.contributions}
+  ${data.contributions}n
 
   ## Tests
   ${data.tests}

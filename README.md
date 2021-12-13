@@ -15,7 +15,7 @@ This application was created to function as a README generator for any given rep
 - [Questions](#questions)
 
 ## Installation 
-First git clone the repo to your local device, in order to be able to create a README file. Install node.js and the inquire npm for usage of this generator.
+First git clone the repo to your local device, in order to be able to create a README file. Install node.js and the inquirer npm for usage of this generator.
 
 ## Usage
 Within the ReadmeGenerator repository you will need to first install inquirer by way of ‘npm install’. After installation, initialize the questions by inputting ‘node index.js’. Once the prompts are answered a new README.md file will be created.

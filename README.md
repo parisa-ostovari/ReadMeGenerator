@@ -35,6 +35,7 @@
 
   ## Questions
 
-    If you have any questions please contact me at:
-      Email: parisaostovari@gmail.com
-      GitHub: https://github.com/parisa-ostovari
+ If you have any questions please contact me at:
+ 
+ Email: parisaostovari@gmail.com
+ GitHub: https://github.com/parisa-ostovari
